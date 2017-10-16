@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .bg{
+                background: url(image/h.jpg);
+                background-repeat:no-repeat;
+                background-position: center;
+                background-size:cover;
+                width:100%;
+                height:100%;
+                position: absolute;
+            }                                                                                                                                                                                                                                                                                          
+           .d2{
+               margin-top: 120px;
+               position: absolute;
+               animation:mymove 4s;
+               animation-iteration-count:1;
+               animation-fill-mode:forwards;
+                /* Safari 和 Chrome */
+               -webkit-animation:mymove 4s;
+               -webkit-animation-iteration-count:1;
+               -webkit-animation-fill-mode:forwards;
+            }
+            
+            @keyframes mymove
+            {
+                from {left:0px;}
+                to {left:350px;}
+            }
+            @-webkit-keyframes mymove /*Safari and Chrome*/
+            {
+                from {left:0px;}
+                to {left:350px;}
+            }
+            h1{
+                color:#ffffff;
+                font-size: 60px;
+                font-family:-webkit-pictograph;
+            }
+            .d3{
+                float:right;
+                margin-right: 20px;
+            }
+            a{
+                text-decoration:none;
+                font-size: 30px;
+                color:#ccffff;
+                font-family: -webkit-pictograph;
+            }
+            a:hover{
+                color:purple; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg">
+            <div class="d3">
+                <a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="login.jsp">Log In</a>
+            </div>
+            <div class='d2'>
+                <h1>Welcome to NIIT Library</h1>
+            </div>
+        </div>
+    </body>
+</html>
